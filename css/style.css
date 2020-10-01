@@ -16,25 +16,24 @@
 }
 
 .hamburguer {
-    
+    position: fixed;
     width: 2rem;
     height: 2rem;
-    position: fixed;
     z-index: 100;
-    right: 2rem;
     top: 2rem;
+    right: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-} 
+    
+}
 
 .line {
     width: 100%;
     height: .1rem;
     background-color: #ffffff;
-    box-shadow: 0.1rem 0.1rem 1px #000;
-
+    box-shadow: 0.1rem 0.1rem 2px #000000;
 }
 
 header {
@@ -126,14 +125,13 @@ header {
 }
 
 .sidebar {
-    width: 20rem;
-    height: 100vh;
-    background-color: #ffffff;
+    background-color: #fff;
     position: fixed;
+    height: 100vh;
+    width: 20rem;
     top: 0;
     right: -20rem;
     transition: all 1s;
-    
 }
 
 .sidebar.show-menu {
@@ -145,47 +143,48 @@ header {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .menu-item {
-    text-align: center;   
+    text-align: center;
     margin-bottom: .5rem;
 }
 
-.menu-link {
-    font-family: var(--font-primary);
+.menu-link {    
+    font-family: var(--font-action);
     font-size: 2rem;
     color: #555;
-    line-height: 2.5rem;
     transition: color 1s;
 }
 
 .menu-link:hover {
-    color: #6a3093;
+    color: #7a017e;
 }
 
 .social-media {
+    width: 100%;
     position: absolute;
     bottom: 2rem;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .social-media i {
-    background-color: #6a3093;
-    color: rgb(255, 255, 255);
-    height: 2.5rem;
+    background-color: rgb(0, 51, 128);
+    border-radius: 100px;
+    color: #ffffff;
     width: 2.5rem;
+    height: 2.5rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     transition: background-color 1s;
 }
 
 .social-media i:hover {
-    background-color: #a044ff;
+    background-color: rgb(4, 89, 218);
 }
+
+
+
